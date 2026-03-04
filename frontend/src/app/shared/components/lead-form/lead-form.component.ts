@@ -54,31 +54,41 @@ import { InquiryService } from '../../../core/services/inquiry.service';
              class="text-red-500 text-sm mt-1">Valid phone number is required</p>
         </div>
 
-        <div>
+        <div class="relative">
           <select 
             formControlName="serviceRequired"
-            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac"
+            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac focus:ring-2 focus:ring-lilac/20 appearance-none bg-white cursor-pointer transition-all duration-200 hover:border-lilac/50"
           >
             <option value="">Select Service *</option>
-            <option value="petroleum">PESO Petroleum License</option>
-            <option value="explosives">Explosives License</option>
-            <option value="gas-cylinder">Gas Cylinder License</option>
-            <option value="smpv">SMPV(U) License</option>
-            <option value="poison">Prohibition & Poison License</option>
-            <option value="import-export">Import/Export PESO Approval</option>
+            <option value="petroleum">⛽ PESO Petroleum License</option>
+            <option value="explosives">💥 Explosives License</option>
+            <option value="gas-cylinder">🔥 Gas Cylinder License</option>
+            <option value="smpv">🚛 SMPV(U) License</option>
+            <option value="poison">⚠️ Prohibition & Poison License</option>
+            <option value="import-export">🌐 Import/Export PESO Approval</option>
           </select>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg class="w-5 h-5 text-lilac" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
         </div>
 
-        <div>
+        <div class="relative">
           <select 
             formControlName="licenseType"
-            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac"
+            class="w-full px-4 py-3 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac focus:ring-2 focus:ring-lilac/20 appearance-none bg-white cursor-pointer transition-all duration-200 hover:border-lilac/50"
           >
             <option value="">License Type *</option>
-            <option value="fresh">Fresh Application</option>
-            <option value="renewal">Renewal</option>
-            <option value="amendment">Amendment</option>
+            <option value="fresh">📝 Fresh Application</option>
+            <option value="renewal">🔄 Renewal</option>
+            <option value="amendment">✏️ Amendment</option>
           </select>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+            <svg class="w-5 h-5 text-lilac" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </div>
         </div>
 
         <div>

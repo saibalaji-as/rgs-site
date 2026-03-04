@@ -39,30 +39,44 @@ import { AuthService } from '../../../core/services/auth.service';
 
       <!-- Filters -->
       <section class="container-custom pb-4">
-        <div class="flex gap-4">
-          <select 
-            [(ngModel)]="filterService" 
-            (change)="loadInquiries()"
-            class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac"
-          >
-            <option value="">All Services</option>
-            <option value="petroleum">Petroleum</option>
-            <option value="explosives">Explosives</option>
-            <option value="gas-cylinder">Gas Cylinder</option>
-            <option value="smpv">SMPV(U)</option>
-            <option value="poison">Poison</option>
-            <option value="import-export">Import/Export</option>
-          </select>
+        <div class="flex flex-wrap gap-4">
+          <div class="relative">
+            <select 
+              [(ngModel)]="filterService" 
+              (change)="loadInquiries()"
+              class="px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac focus:ring-2 focus:ring-lilac/20 appearance-none bg-white cursor-pointer transition-all duration-200 hover:border-lilac/50"
+            >
+              <option value="">All Services</option>
+              <option value="petroleum">⛽ Petroleum</option>
+              <option value="explosives">💥 Explosives</option>
+              <option value="gas-cylinder">🔥 Gas Cylinder</option>
+              <option value="smpv">🚛 SMPV(U)</option>
+              <option value="poison">⚠️ Poison</option>
+              <option value="import-export">🌐 Import/Export</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <svg class="w-4 h-4 text-lilac" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
 
-          <select 
-            [(ngModel)]="filterContacted" 
-            (change)="loadInquiries()"
-            class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac"
-          >
-            <option value="">All Status</option>
-            <option value="false">Pending</option>
-            <option value="true">Contacted</option>
-          </select>
+          <div class="relative">
+            <select 
+              [(ngModel)]="filterContacted" 
+              (change)="loadInquiries()"
+              class="px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:border-lilac focus:ring-2 focus:ring-lilac/20 appearance-none bg-white cursor-pointer transition-all duration-200 hover:border-lilac/50"
+            >
+              <option value="">All Status</option>
+              <option value="false">⏳ Pending</option>
+              <option value="true">✅ Contacted</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+              <svg class="w-4 h-4 text-lilac" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </div>
+          </div>
         </div>
       </section>
 

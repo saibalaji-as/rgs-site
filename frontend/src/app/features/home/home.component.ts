@@ -13,37 +13,37 @@ import { LogoComponent } from '../../shared/components/logo/logo.component';
 export class HomeComponent {
   services = [
     {
-      icon: '⛽',
+      image: 'assets/images/petroleum.png',
       title: 'PESO Petroleum License',
       description: 'Complete assistance for petroleum storage and retail outlet licensing',
       slug: 'petroleum-license'
     },
     {
-      icon: '💥',
+      image: 'assets/images/explosives.png',
       title: 'Explosives License',
       description: 'Expert consultancy for explosives manufacturing and storage permits',
       slug: 'explosives-license'
     },
     {
-      icon: '🔥',
+      image: 'assets/images/gas-cylinder.png',
       title: 'Gas Cylinder License',
       description: 'Gas cylinder rules compliance and licensing support',
       slug: 'gas-cylinder-license'
     },
     {
-      icon: '🚛',
+      image: 'assets/images/smpv.png',
       title: 'SMPV(U) License',
       description: 'Static and mobile pressure vessel licensing services',
       slug: 'smpv-license'
     },
     {
-      icon: '⚠️',
+      image: 'assets/images/poison.png',
       title: 'Prohibition & Poison License',
       description: 'Licensing for prohibited and poisonous substances',
       slug: 'poison-license'
     },
     {
-      icon: '🌐',
+      image: 'assets/images/import-export.png',
       title: 'Import/Export PESO Approval',
       description: 'International trade compliance and PESO approvals',
       slug: 'import-export-approval'

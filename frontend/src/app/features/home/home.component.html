@@ -39,8 +39,14 @@
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div *ngFor="let service of services" class="card group cursor-pointer">
-        <div class="text-5xl mb-4">{{ service.icon }}</div>
+      <div *ngFor="let service of services" class="card group cursor-pointer hover:shadow-xl transition-all duration-300 overflow-hidden">
+        <div class="mb-6 -mx-6 -mt-6">
+          <img 
+            [src]="service.image" 
+            [alt]="service.title"
+            class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+          />
+        </div>
         <h3 class="text-xl font-bold text-lilac-dark mb-3">{{ service.title }}</h3>
         <p class="text-gray-600 mb-4">{{ service.description }}</p>
         <a [routerLink]="['/services', service.slug]" 
@@ -100,15 +106,21 @@
 </section>
 
 <!-- Industries We Serve -->
-<section class="section-padding">
+<section class="section-padding bg-light-grey">
   <div class="container-custom">
     <div class="text-center mb-12">
       <h2 class="text-3xl md:text-4xl font-bold text-lilac-dark mb-4">Industries We Serve</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Providing expert PESO licensing solutions across diverse sectors</p>
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div *ngFor="let industry of industries" class="card text-center">
-        <h3 class="text-lg font-semibold text-lilac-dark">{{ industry }}</h3>
+      <div *ngFor="let industry of industries" class="bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border-l-4 border-lilac hover:border-lilac-dark transform hover:-translate-y-1">
+        <div class="flex items-center space-x-3">
+          <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-lilac to-lilac-dark rounded-lg flex items-center justify-center">
+            <span class="text-white text-xl font-bold">🏭</span>
+          </div>
+          <h3 class="text-lg font-semibold text-lilac-dark">{{ industry }}</h3>
+        </div>
       </div>
     </div>
   </div>
