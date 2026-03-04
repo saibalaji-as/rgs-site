@@ -1,17 +1,24 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { LogoComponent } from '../logo/logo.component';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, LogoComponent],
   template: `
     <footer class="bg-lilac-dark text-white">
       <div class="container-custom py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-xl font-bold mb-4">PESO Consultants</h3>
+            <div class="flex items-center space-x-3 mb-4">
+              <!-- <app-logo [size]="'sm'" [invertColor]="true" [color]="'#E6D6F2'" /> -->
+              <div class="flex flex-col">
+                <h3 class="text-xl font-bold" style="font-family: Georgia, serif;">G Samuel & Co</h3>
+                <span class="text-xs text-lilac-light">PESO Licensing</span>
+              </div>
+            </div>
             <p class="text-lilac-light text-sm">Your trusted partner for PESO licensing and industrial compliance solutions across India.</p>
           </div>
           
@@ -38,7 +45,7 @@ import { RouterLink } from '@angular/router';
           <div>
             <h4 class="font-semibold mb-4">Contact Info</h4>
             <ul class="space-y-2 text-sm text-lilac-light">
-              <li>📧 info&#64;pesoconsultants.com</li>
+              <li>📧 info&#64;gsamuelandco.com</li>
               <li>📞 +91 98765 43210</li>
               <li>📍 Pan India Coverage</li>
             </ul>

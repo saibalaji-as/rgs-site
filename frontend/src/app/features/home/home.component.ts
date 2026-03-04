@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { LeadFormComponent } from '../../shared/components/lead-form/lead-form.component';
+import { LogoComponent } from '../../shared/components/logo/logo.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, LeadFormComponent],
+  imports: [CommonModule, RouterLink, LeadFormComponent, LogoComponent],
   templateUrl: './home.component.html'
 })
 export class HomeComponent {

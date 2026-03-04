@@ -20,5 +20,5 @@ import { WhatsappButtonComponent } from './shared/components/whatsapp-button/wha
   `
 })
 export class AppComponent {
-  title = 'PESO License Consultants';
+  title = 'G Samuel & Co - PESO License Consultants';
 }

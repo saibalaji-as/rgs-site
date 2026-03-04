@@ -1,20 +1,22 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { LogoComponent } from '../logo/logo.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule, RouterLink, RouterLinkActive],
+  imports: [CommonModule, RouterLink, RouterLinkActive, LogoComponent],
   template: `
     <header class="sticky top-0 z-50 bg-white shadow-soft">
       <nav class="container-custom">
         <div class="flex items-center justify-between h-20">
-          <a routerLink="/" class="flex items-center space-x-2">
-            <div class="w-10 h-10 bg-gradient-to-br from-lilac to-lilac-dark rounded-lg flex items-center justify-center">
-              <span class="text-white font-bold text-xl">P</span>
+          <a routerLink="/" class="flex items-center space-x-3">
+            <!-- <app-logo [size]="'sm'" [color]="'#6A4C93'" /> -->
+            <div class="flex flex-col">
+              <span class="text-3xl font-bold text-lilac-dark" style="font-family: Georgia, serif;">G Samuel & Co</span>
+              <span class="text-s text-gray-600">PESO Licensing & Certification</span>
             </div>
-            <span class="text-xl font-bold text-lilac-dark">PESO Consultants</span>
           </a>
 
           <button (click)="toggleMenu()" class="md:hidden text-lilac-dark">
