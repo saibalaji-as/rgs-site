@@ -45,9 +45,10 @@ import { LogoComponent } from '../logo/logo.component';
           <div>
             <h4 class="font-semibold mb-4">Contact Info</h4>
             <ul class="space-y-2 text-sm text-lilac-light">
-              <li>📧 info&#64;gsamuelandco.com</li>
-              <li>📞 +91 98765 43210</li>
-              <li>📍 Pan India Coverage</li>
+              <li>📧 ratan.s.tata&#64;gmail.com</li>
+              <li>📞 +91 98848 18817</li>
+              <li>📍 No. 38, Tana Street, Room No.7, 1st Floor (TELC Students Hostel) Purasawlkam Chennai - 600 007</li>
+              <li>📍 101, Raj House, Plot No. 13&14, Sector 1, Ghansoli, Navi Mumbai - 400 701</li>
             </ul>
           </div>
         </div>
